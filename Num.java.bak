@@ -1,0 +1,61 @@
+/*
+Write a java program to count the number of digits present in the number
+34567 = 5
+Write a java program to find the sum of the digits present in the number
+34567 = 25
+*/
+class  Num
+{
+	int getCount(int num){
+		int count = 0;
+		while(num !=0){
+			num /=10;
+			count++;
+		}
+		return count;
+	}
+
+	int getTotal(int num){
+		int sum = 0;
+		while(num !=0){
+			int digit = num % 10;
+			sum += digit;
+			num /=10;
+		}
+		return sum;
+	}
+
+	int reverseNum(int num){
+		int rev = 0;
+		while(num !=0){
+			int digit = num % 10;
+			rev = rev * 10 + digit;
+			num /=10;
+		}
+		return rev;
+	}
+	public static void main(String[] args) 
+	{
+		Num n = new Num();
+		int noofdigits = n.getCount(45678);
+		System.out.println("Total number of digits: " + noofdigits);
+		int total = n.getTotal(45678);
+		System.out.println("Sum of digits: " + total);
+		int reverse = n.reverseNum(45678);
+		System.out.println("Reverse of the number is: " + total);
+	}
+}
+
+
+/* 34	=
+	= 4 * 10
+	= 40 + 3
+	= 43
+
+345 = 
+	= 5 * 10
+	= 50 + 4
+	= 54 * 10
+	= 540 + 3
+	= 543
+*/ 
