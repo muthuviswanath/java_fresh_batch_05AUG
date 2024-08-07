@@ -1,0 +1,39 @@
+method:
+
+	4 ways to write a method and there are 2 types of method
+
+	Types of method:
+
+			1. Concrete method	- It has method implementation
+			2. Abstract method	- It doesn't have method implementation
+
+	Concrete method
+		static,	non-static
+
+	1. Method that takes input but returns nothing
+			
+			void display(int a){
+
+			}
+	
+	2. Method that takes input and returns something
+
+			int display(int a){
+				return a;
+			}
+
+	3. Method that takes no input and returns nothing
+
+			void display(){
+
+			}
+
+	4. Method that takes no input but returns something
+
+			static int display(){
+				return 0;
+			}
+
+	Abstract Methods:
+
+			abstract int display();
