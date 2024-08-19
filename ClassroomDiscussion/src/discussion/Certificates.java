@@ -7,6 +7,7 @@ public class Certificates {
 	String dateofdeath;
 	String natureofdeath;
 	String timeofdeath;
+	static String dob = "16-May-1984";
 	public Certificates(String dateofbirth) {
 		super();
 		this.dateofbirth = dateofbirth;
@@ -14,7 +15,7 @@ public class Certificates {
 	}
 	
 	public Certificates(String dateofgraduation, String college) {
-		this("16-May-1984");
+		this(dob);
 		this.dateofgraduation = dateofgraduation;
 		this.college = college;
 		System.out.println("Muthu completed his graduation on :" + this.dateofgraduation +" in " + this.college);
@@ -29,6 +30,9 @@ public class Certificates {
 	}
 	public static void main(String[] args) {
 		Certificates death = new Certificates("15-Aug-2024", "mosquito bite", "Exactly at 12:00 AM");
+		String s = """ 
+					Test """;
+		
 	}
 	
 }
